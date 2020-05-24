@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Suite" parallel="methods">
+	<test name="Test Parallel">
+		<classes>
+			<class name="ParallelTestNg.ParallelBrowser">
+				<methods>
+					<include name="FireFoxBrowser" />
+					<include name="ChromeBrowser" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>
